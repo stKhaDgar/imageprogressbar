@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="200dp">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/ivImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:siShape="@drawable/shape_image_view_circle"
+        app:siSquare="true"
+        app:layout_constraintStart_toStartOf="@id/arcProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/arcProgressBar"
+        app:layout_constraintTop_toTopOf="@id/arcProgressBar"
+        app:layout_constraintBottom_toBottomOf="@id/arcProgressBar"/>
+
+    <com.stmaktavish.imageprogressbar.ArcProgressBar
+        android:id="@+id/arcProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:arc_angle="310"
+        app:arc_unfinished_color="#EAEAEA"
+        app:arc_finished_color="#5BC0EB"
+        app:arc_stroke_width="5dp"
+        app:arc_progress="96"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="96%"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:textColor="#D1D1D1"
+                android:textSize="7sp"
+                android:textAllCaps="true"
+                android:text="Job Success"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

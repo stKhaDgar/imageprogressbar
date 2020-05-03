@@ -1,0 +1,3 @@
+rootProject.name='ImageProgressBar'
+include ':app'
+include ':imageprogressbar'
