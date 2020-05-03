@@ -4,7 +4,7 @@
 
 # Implementation
 ```sh
-    implementation 'com.github.stKhaDgar:imageprogressbar:1.4'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+implementation 'com.github.stKhaDgar:imageprogressbar:1.4'
+implementation 'com.google.android.material:material:1.0.0'
+implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
 ```
